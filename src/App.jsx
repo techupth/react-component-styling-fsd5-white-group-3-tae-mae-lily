@@ -1,13 +1,14 @@
 import { useState } from "react";
 import Alert from "./components/Alert";
 import "./App.css";
-
+import Button from "./components/Button";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
       <div className="button-components-section">
+      <Button />
         {/* ถ้าสร้าง Component ของ Buttons เสร็จแล้วให้ Uncomment โค้ดด้านล่าง เพื่อดูผลลัพธ์ */}
         {/* <Button color="primary">Primary</Button>
         <Button color="secondary">Secondary</Button> */}

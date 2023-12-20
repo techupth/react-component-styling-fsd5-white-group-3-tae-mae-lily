@@ -6,7 +6,7 @@ import WarningIcon from "../assets/icons/alert-triangle.jsx";
 import InfoIcon from "../assets/icons/alert-circle.jsx";
 import SuccessIcon from "../assets/icons/check-circle.jsx";
 
-function Alert(props) {
+const Alert = (props) => {
   let bgColor = "#F9EBC8";
   let AlertIcon = InfoIcon;
 
@@ -39,13 +39,7 @@ function Alert(props) {
         background-color: ${bgColor};
       `}
     >
-      <div
-        css={css`
-          margin-right: 20px;
-        `}
-      >
-        <AlertIcon />
-      </div>
+      <div css={css`margin-right: 20px;`} > <AlertIcon /> </div>
       {props.children}
     </div>
   );
